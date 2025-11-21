@@ -181,7 +181,7 @@ body{
     background-color: #16A49F;
 }
 .bg-principal{
-    background-color: #F5F5F5;
+    background-color: #f3eded;
 }
 .bg-blue{
     background-color: blue;
@@ -866,6 +866,302 @@ header{
 
 /* ---------------------------------------------------------*/
 /* ------------------- Testimoniale------------------------- */
+/* ---------------------Profil------------------------------ */
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.header-title-close{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.modal-header a{
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-profile-picture{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.profile-pic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.profile-pic-container i{
+    font-size: 5rem;
+    color: #07a39e;
+}
+.profile-pic-container button{
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    cursor: pointer;
+}
+.profile-pic-container button:hover {
+    background-color: #07a39e;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.modal-form-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-input-group label{
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+.form-input-group input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    opacity: 0.8;
+    outline-color: #07a39e;
+}
+
+.modal-footer-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.modal-footer-actions button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.close-modal-btn{
+    background-color: #f8fafc;
+}
+.save-changes-btn{
+    background-color: #07a39e;
+    color: #ffffff; 
+    border: none;
+}
+.save-changes-btn:hover{
+    background-color: #079893;
+}
+.close-modal-btn:hover{
+    background-color: #07a39e;
+    color: #ffffff;
+}
+/* ---------------------------------------------------------- */
+/* ----------Offres----------------------------------------- */
+.contener{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+}
+.offre_of_days {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.offre_of_days i{
+    color: rgba(255, 165, 0);
+    font-size: 3rem;
+    animation: bounce 5s infinite ease-in-out;
+}
+/* @keyframes bounce {
+    0%, 100% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+} */
+.sect__block-left-rigth{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.block_of_grid{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 1s ease, box-shadow 0.3s ease;
+}
+.block_of_grid:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 1px solid #f5f1f1;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img img {
+    width: 350px;
+    height: 300px;
+    border-radius: 30px;
+    transition: transform 3s ease, box-shadow 3s ease;
+}
+.img img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.icon_and_img{
+    position: relative;
+}
+.icon_and_img .icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f5f1f1;
+    color: #07a39e;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: icon 5s infinite ease-in-out;
+}
+/* @keyframes icon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+} */
+.icon_and_img .icon:hover{
+    background-color: #07a39e;
+    color: #f5f1f1;
+    transition: 0.5s;
+}
+.icon_and_img .icon i:nth-child(1){
+    font-size: 0.9rem;
+    color: black;
+}
+.icon_and_img .icon i:nth-child(1):hover{
+    color: #f5f1f1;
+}
+.mane_of_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+.avis_of_unit{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+}
+.avis_of_unit i{
+    font-size: 1rem;
+    color: rgba(255, 165, 0);
+}
+.pris {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.pris h3:nth-child(2){
+    color: #999;
+    text-decoration: line-through;
+}
+.offre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: rgba(255, 165, 0);
+    color: #ffffff;
+    margin-bottom: 20px;
+    animation: mun 2.5s alternate infinite;
+    position: relative;
+}
+/* @keyframes mun {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+} */
+.btn_1, .btn_2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.green{
+    background-color: #f8fafc;
+    color: black;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.green:hover{
+    background-color: #07a39e;
+    color: #ffffff;
+}
+.red{
+    background-color: #07a39e;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.red:hover{
+    background-color: #079893;
+}
+p , span {
+    color: #999;
+}
+h2, h3 {
+    color: black;
+}
+
+
+/* --------------------------------------------------------- */
+
 
 /* --------------------------------------------------------- */
 @media screen and (max-width: 1555px) {
