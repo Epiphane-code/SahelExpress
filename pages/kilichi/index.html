@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="../home/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="width-50vw d-flex fd-column gap-20 padding-20px padding-left-right-none bg-principal">
+    <header class="position-fixed top-0 height-70px height-150px d-flex fd-column bg-principal ">
+        <section class="section1 d-flex jc-between padding-20px gap-20 ai-center">
+            <div class="logo d-flex ai-center flex-1 gap-20">
+                <i class="fa-solid fa-dolly color-secondaire size-30px"></i>
+                <span class="size-30px fw-700">SahelExpress</span>
+            </div>
+            <div class="navbar d-flex ai-center flex-3 mobile-none">
+                <div class="d-flex gap-20 list-style-none lien-style-none fw-600">
+                    <label for="accueil">
+                        <input name="nav-checked" type="radio" hidden id="accueil">
+                        <a href="../home/index.html" class="cursor-pointer">
+                            Accueil
+                        </a>
+
+                    </label>
+                    <label for="agro">
+                        <input name="nav-checked" type="radio" hidden id="agro">
+                        <a href="../agro-alimentaire/index.html" class="cursor-pointer">
+                            Agro-Alimentaires
+                        </a>
+                    </label>
+                    <label for="poterie">
+                        <input name="nav-checked" type="radio" hidden id="poterie">
+                        <a href="../poterie/index.html" class="cursor-pointer">
+                            Poterie
+                        </a>
+                    </label>
+                   
+                    <label for="kilichi">
+                        <input name="nav-checked" type="radio" hidden checked id="kilichi">
+                        <a href="../kilichi/index.html" class="cursor-pointer">
+                            Kilichi
+                        </a>
+                    </label>
+                    <label for="encens">
+                        <input name="nav-checked" type="radio" hidden id="encens">
+                        <a href="../encens/index.html" class="cursor-pointer">
+                            Encens
+                        </a>
+                    </label>
+                    <label for="sacs">
+                        <input name="nav-checked" type="radio" hidden id="sacs">
+                        <a href="../sacs/index.html" class="cursor-pointer">
+                            Sacs et chaussures
+                        </a>
+                    </label>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="profil d-flex ai-center gap-10 flex-1 jc-end mobile-none">
+                <div class="user cursor-pointer lien-style-none fw-700">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="../login/index.html">Connexion</a>
+                </div>
+                <div class=" cursor-pointer lien-style-none">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#panier-pop">Paniers</a>
+                </div>
+            </div>
+            <nav class="menu-mobile d-flex fd-column">
+                <div><i class="fa-solid fa-list size-30px"></i></div>
+                <ul>
+                    <li class="user fw-700">
+                        <a href="../login/index.html">Connexion</a>
+                    </li>
+                    <li class=" fw-700">
+                        <a href="#panier-pop">Paniers</a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+        </section>
+        <section class="section2 d-flex jc-between gap-20 bg-secondaire padding-20px raduis-10">
+            <div class="recherche flex-2 d-flex jc-between ai-center border-raduis-20 padding-10px gap-20 bg-white">
+                <div class="menu none-400">
+                    <select class="border-none" name="" id="">
+                        <option value="">All catégories</option>
+                        <option value="">Artisanats</option>
+                        <option value="">Épices</option>
+                    </select>
+                </div>
+                <input class="border-none flex-1" type="search" placeholder="Rechercher un article...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="offre d-flex jc-end gap-10pc ai-center flex-3 color-white">
+                <div>Livraison gratuite à partir de 10.000f</div>
+                <div>30 jours de garantie</div>
+                <div>Paiement sécurisé</div>
+            </div>
+            <select class="offre-mobile border-none bg-none color-white fw-700" name="" id="">
+                <option value="">Offres</option>
+                <option value="">Livraison gratuite à partir de 10.000f</option>
+                <option value="">30 jours de garantie</option>
+                <option value="">Paiement sécurisé</option>
+            </select>
+        </section>
+    </header>
+    <main class="d-flex fd-column gap-20 bg-white border-raduis-20 margin-top-180px padding-20px z-index-min">
+        <div class="width-100pc">
+            <div class="presentation width-100pc height-70vh border-raduis-gray position-relative z-index-moyenne">
+                <div
+                    class=" filter2 position-absolute top-0 left-0 width-100pc height-100pc d-flex jc-center ai-center">
+                    <div class="width-100pc height-100pc d-flex fd-column ai-center gap-40  color-white ">
+                        <div class="fw-700 size-60px shadow-white border-raduis-gray margin-top-180px">Bienvenue dans la section Agro-Alimentaires</div>
+                        <div class="size-30px width-80pc color-secondaire fw-600">Nous mettons à l’honneur le savoir-faire de nos artisans, producteurs et
+                            petites entreprises du Sahel.
+                            Ici, vous trouverez des produits authentiques, naturels et soigneusement sélectionnés pour
+                            leur qualité.
+                            En achetant chez nous, vous soutenez directement l’économie locale et contribuez au
+                            développement de nos communautés.
+                        </div>
+                        <div class="d-flex jc-around gap-20 width-80pc padding-20px">
+                            <div class="flex-1 d-flex jc-start ai-center gap-20 size-20px border-raduis-gray border-presentation">
+                            <img class="width-70px circle height-70px" src="../../img/bienetre.jpg" alt="">
+                            <div>Naturel pour le bien êtres</div>
+
+                            </div>
+                            <div class="flex-1 d-flex jc-start ai-center gap-20 size-20px border-raduis-gray border-presentation">
+                            <img class="width-70px circle height-70px" src="../../img/livraison.png" alt="">
+                            <div>Gagner du temps avec SahelExpress</div>
+
+                            </div>
+                            <div class="flex-1 d-flex jc-start ai-center gap-20 size-20px border-raduis-gray border-presentation">
+                            <img class="width-70px circle height-70px" src="../../img/securise.webp" alt="">
+                            <div>
+                                Votre securité, notre priorité
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+       
+        <div class="d-flex ai-center jc-center size-30px fw-700 padding-top-bottom-20px">Tous les produits Agro-Alimentaires</div>
+        <div class="d-flex ai-center jc-center size-30px fw-700 padding-top-bottom-20px">Temoignages Clients</div>
+
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="d-flex fd-column gap-10 border-raduis-20 bg-white padding-20px">
+        <div class="scroll-x d-grid gt-columns-4 gap-20">
+            <div class="footer-info width-200px d-flex fd-column">
+                <h3 class="fw-600">Obtenir de l'aide</h3>
+                <p>Centre d'assistance</p>
+                <p>Discussion en direct</p>
+                <p>Statut de commande</p>
+                <p>Remboursement</p>
+                <p>Signaler un abus</p>
+            </div>
+            <div class="footer-info width-200px d-flex fd-column">
+                <h3 class="fw-600">Assurances</h3>
+                <p>Paiements sûrs et faciles</p>
+                <p>Politique</p>
+                <p>Livraison à temps</p>
+                <p>Protections aprés vente</p>
+                <p>Suivi de protection</p>
+            </div>
+
+            <div class="footer-info width-200px d-flex fd-column">
+                <h3 class="fw-600">Rendez-vous</h3>
+                <p>Commencez à vendre</p>
+                <p>Centre des vendeurs</p>
+                <p>Devenir un fournisseur</p>
+                <p>Partenariats</p>
+                <p>Telecharger l'application</p>
+            </div>
+            <div class="footer-info width-200px d-flex fd-column">
+                <h3 class="fw-600">Renseignements</h3>
+                <p>À propos de SahelPrestige</p>
+                <p>Politiques</p>
+                <p>Centre de nouvelles</p>
+                <p>Nous rejoindre</p>
+            </div>
+        </div>
+        <div class="d-grid gt-columns-2 gap-10">
+            <div class="scroll-x d-flex fd-column">
+                <div class="width-100pc d-flex ai-center gap-20 padding-top-bottom-10px">
+                    <div class="hr"></div>
+                    <div>Partenaires / Paiement</div>
+                    <div class="hr"></div>
+                </div>
+                <div class="d-flex gap-20 ai-center padding-10px">
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                        <div class="after-none">Visa</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <img src="../../img/airtel-money-2.png" alt="">
+                        </div>
+                        <div class="after-none">Money</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </div>
+                        <div class="after-none">PayPal</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <img src="../../img/myNita.png" alt="">
+                        </div>
+                        <div class="after-none">myNita</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div class="logo-amana">
+                            <img src="../../img/amanata.png" alt="">
+                        </div>
+                        <div class="after-none">AmanaTa</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <img src="../../img/imoney - Modifié.png" alt="">
+                        </div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="scroll-x d-flex fd-column ">
+                <div class="width-100pc d-flex ai-center gap-20 padding-top-bottom-10px">
+                    <div class="hr"></div>
+                    <div>Réseaux Sociaux</div>
+                    <div class="hr"></div>
+                </div>
+                <div class="d-flex gap-20 ai-center padding-10px">
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="after-none">Whatsapp</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="after-none">Instagram</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="after-none">Facebook</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="after-none">Twitter</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="after-none">Linkdin</div>
+                    </div>
+                    <div class="d-flex jc-center ai-center gap-10 padding-10px cursor-pointer flex-1">
+                        <div>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <div class="after-none">Tiktok</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div id="profil-pop" class="filter position-fixed width-100pc height-100pc d-flex ai-center jc-center top-0 left-0">
+        <div class="pop bg-principal border-raduis-20 padding-20px d-flex ai-center jc-center">
+            <a href="#">Fermer</a>
+        </div>
+    </div>
+    <div id="panier-pop" class="filter position-fixed width-100pc height-100pc d-flex ai-center jc-center top-0 left-0">
+        <div class="pop bg-principal border-raduis-20 padding-20px d-flex ai-center jc-center">
+            <a href="#">Fermer</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
