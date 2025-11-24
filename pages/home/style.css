@@ -737,6 +737,13 @@ header{
 .border-shadow{
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
 }
+.grid-anim:hover{
+    transform: scale(1.4);
+
+}
+.block_of_grid:hover{
+    
+}
 /* -------------------Panier------------------------------ */
 .panier {
     display: flex;
