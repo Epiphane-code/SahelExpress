@@ -19,61 +19,79 @@
                 <span class="size-30px fw-700">SahelExpress</span>
             </div>
             <div class="navbar d-flex ai-center flex-3 mobile-none">
-                <div class="d-flex gap-20 list-style-none lien-style-none fw-600">
-                    <label for="accueil">
+                <div class="d-flex gap-10 list-style-none lien-style-none fw-600">
+                    <label class="accueil" for="accueil">
                         <input name="nav-checked" type="radio" checked hidden id="accueil">
-                        <a href="#profil-pop" class="cursor-pointer">
+                        <a href="#" class="cursor-pointer">
                             Accueil
                         </a>
 
                     </label>
-                    <label for="agro">
-                        <input name="nav-checked" type="radio" hidden id="agro">
-                        <a href="../agro-alimentaire/index.html" class="cursor-pointer">
-                            Agro-Alimentaires
-                        </a>
-                    </label>
-                    <label for="poterie">
-                        <input name="nav-checked" type="radio" hidden id="poterie">
-                        <a href="../poterie/index.html" class="cursor-pointer">
-                            Poterie
-                        </a>
-                    </label>
+                    <div class="position-relative">
+                        <a href="#menu-mobile" class="border-raduis-20 padding-10px color-black"> Tous les categories
+                            <span class="size-20px rot"> ⌄ </span></a href="#menu-mobile">
+                        <div id="menu-mobile"
+                            class="menu-mobile d-flex fd-column position-absolute bg-principal top-20px left-0 gap-20 width-250px padding-20px border-raduis-20">
+                            <label for="agro">
+                                <input name="nav-checked" type="radio" hidden id="agro">
+                                <a href="../agro-alimentaire/index.html" class="cursor-pointer">
+                                    AgroAlimentaires
+                                </a>
+                            </label>
+                            <label for="poterie">
+                                <input name="nav-checked" type="radio" hidden id="poterie">
+                                <a href="../poterie/index.html" class="cursor-pointer">
+                                    Poterie
+                                </a>
+                            </label>
 
-                    <label for="kilichi">
-                        <input name="nav-checked" type="radio" hidden id="kilichi">
-                        <a href="../kilichi/index.html" class="cursor-pointer">
-                            Kilichi
-                        </a>
-                    </label>
-                    <label for="encens">
-                        <input name="nav-checked" type="radio" hidden id="encens">
-                        <a href="../encens/index.html" class="cursor-pointer">
-                            Encens
-                        </a>
-                    </label>
-                    <label for="sacs">
-                        <input name="nav-checked" type="radio" hidden id="sacs">
-                        <a href="../sacs/index.html" class="cursor-pointer">
-                            Sacs et chaussures
-                        </a>
-                    </label>
+                            <label for="kilichi">
+                                <input name="nav-checked" type="radio" hidden id="kilichi">
+                                <a href="../kilichi/index.html" class="cursor-pointer">
+                                    Kilichi
+                                </a>
+                            </label>
+                            <label for="encens">
+                                <input name="nav-checked" type="radio" hidden id="encens">
+                                <a href="../encens/index.html" class="cursor-pointer">
+                                    Encens
+                                </a>
+                            </label>
+                            <label for="sacs">
+                                <input name="nav-checked" type="radio" hidden id="sacs">
+                                <a href="../sacs/index.html" class="cursor-pointer">
+                                    Sacs et chaussures
+                                </a>
+                            </label>
+                            <label for="sacs">
+                                <input name="nav-checked" type="radio" hidden id="sacs">
+                                <a href="../sacs/index.html" class="cursor-pointer">
+                                    <a href="#" class="bg-secondaire width-100pc raduis-10 color-white">FERMER</a>
+                                </a>
+                            </label>
 
+                        </div>
+                    </div>
 
 
                 </div>
+
+
+
+
             </div>
-            <div class="profil d-flex ai-center gap-10 flex-1 jc-end mobile-none">
+
+            <div class="profil d-flex ai-center jc-end mobile-none">
                 <div class="user cursor-pointer lien-style-none fw-700">
                     <i class="fa-solid fa-circle-user"></i>
                     <a href="#profil-pop">Profil</a>
                 </div>
                 <div class=" cursor-pointer lien-style-none">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="#panier-pop">Paniers</a>
+
+                    <a href="#panier-pop" class="width-30px"> <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
-            <nav class="menu-mobile d-flex fd-column">
+            <nav class="menu-mobile-flex d-flex fd-column">
                 <div><i class="fa-solid fa-list size-30px"></i></div>
             </nav>
         </section>
@@ -112,7 +130,7 @@
                 <div class="border-shadow d-flex jc-between padding-40px size-20px border-raduis-gray ">
                     <div class="d-flex gap-10">
                         <i class="fa-solid fa-seedling color-maroon"></i>
-                        <div> Agro-Alimentaires</div>
+                        <div> Agro</div>
 
                     </div>
 
@@ -120,7 +138,7 @@
                     </div>
 
                 </div>
-                <div class="border-shadow d-flex jc-between padding-40px size-20px border-raduis-gray ">
+                <button class="border-shadow d-flex bg-white jc-between padding-40px size-20px border-raduis-gray ">
                     <div class="d-flex gap-10">
                         <i class="fa-solid fa-ring color-maroon"></i>
                         <div> Bijoutérie</div>
@@ -130,7 +148,7 @@
                     <div class="color-white circle width-30px d-flex ai-center jc-center height-30px bg-secondaire">2
                     </div>
 
-                </div>
+                </button>
                 <div class="border-shadow d-flex jc-between padding-40px size-20px border-raduis-gray ">
                     <div class="d-flex gap-10">
                         <i class="fa-solid fa-vest-patches color-maroon"></i>
